@@ -1,0 +1,15 @@
+{
+  "name": "eloquent_js",
+  "version": "1.0.0",
+  "description": "Attempting to code all 21 chapters of \"Eloquent JavaScript\"",
+  "main": "index.js",
+  "repository": "git@github.com:alimnastaev/Eloquent-JavaScript-exercises.git",
+  "author": "Alim Nastaev <a.nastaev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
