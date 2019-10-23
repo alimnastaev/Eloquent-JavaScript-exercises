@@ -1,12 +1,4 @@
-function min(a, b) {
-  if (a < b) return a
-  else return b
-}
-
-// console.log(min(0, 10))
-// // → 0
-// console.log(min(0, -10))
-// // -10
+const min = require('../Ch.3:_Functions/minimum');
 
 test('find minimum number in 2 numbers', () => {
   expect(min(1, 2)).toBe(1)
