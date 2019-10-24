@@ -17,21 +17,44 @@
 // define a binding size = 8 and change the program so that it works
 // for any size, outputting a grid of the given width and height.
 
-let pattern = '#_'
-let counter = 0
-let size = 8
+function chessboard(size) {
+  let board = ''
 
-while (counter < size) {
-  if (counter % 2 == 0) {
-    console.log(
-      pattern
-        .split('')
-        .reverse()
-        .join('')
-        .repeat(size / pattern.length),
-    )
-  } else {
-    console.log(pattern.repeat(size / pattern.length))
+  for (let height = 0; height < size; height++) {
+    for (let width = 0; width < size; width++) {
+      if ((height + width) % 2 == 0) {
+        board += '_'
+      } else {
+        board += '#'
+      }
+    }
+    board += '\n'
   }
-  counter += 1
+  return board
 }
+
+
+module.exports = min
+
+/* Solution 1.
+
+// let pattern = '#_'
+// let counter = 0
+// let size = 8
+
+// while (counter < size) {
+//   if (counter % 2 == 0) {
+//     console.log(
+//       pattern
+//         .split('')
+//         .reverse()
+//         .join('')
+//         .repeat(size / pattern.length),
+//     )
+//   } else {
+//     console.log(pattern.repeat(size / pattern.length))
+//   }
+//   counter += 1
+// }
+
+*/
