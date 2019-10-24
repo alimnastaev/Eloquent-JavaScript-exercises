@@ -23,7 +23,7 @@ function chessboard(size) {
   for (let height = 0; height < size; height++) {
     for (let width = 0; width < size; width++) {
       if ((height + width) % 2 == 0) {
-        board += '_'
+        board += ' '
       } else {
         board += '#'
       }
@@ -33,8 +33,7 @@ function chessboard(size) {
   return board
 }
 
-
-module.exports = min
+module.exports = chessboard
 
 /* Solution 1.
 
