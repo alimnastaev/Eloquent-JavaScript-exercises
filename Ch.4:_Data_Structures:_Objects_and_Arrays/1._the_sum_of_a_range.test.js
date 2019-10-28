@@ -1,6 +1,7 @@
 function range(start, end, step) {
   let array = []
-  //   if 3d arg not provided it is int 1 as default
+  //   if 3d arg not provided it is int 1 as default:
+  //   that way we can avoid to write else if block if 3 arg is step = 1 in parameters
   if (step == null) {
     step = 1
   }
